@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom"; // Fix 1: Added Router Imports
 import Sidebar from "../Component/sidebar";
-
-const API_BASE = "http://localhost:3000";
+import { API_BASE } from "../api";
 
 function TicketDetails() {
   const { id } = useParams(); 
   const navigate = useNavigate();
-
+ 
   const [ticket, setTicket] = useState(null); 
   const [status, setStatus] = useState("Open");
   const [note, setNote] = useState("");

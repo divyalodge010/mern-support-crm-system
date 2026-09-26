@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../Component/sidebar";
-
-const API_BASE = "http://localhost:3000";
+import { API_BASE } from "../api";
 
 function Ticket() {
   const navigate = useNavigate();

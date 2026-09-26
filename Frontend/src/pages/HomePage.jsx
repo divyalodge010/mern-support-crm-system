@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../Component/sidebar";
+import { API_BASE } from "../api";
 
-const API_BASE = "http://localhost:3000";
+
 
 function HomePage() {
   const navigate = useNavigate();
